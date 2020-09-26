@@ -2,3 +2,4 @@
 /Scripts
 /.vscode
 /pyvenv.cfg
+/__pycache__

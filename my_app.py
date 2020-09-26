@@ -19,13 +19,13 @@ app = Flask(__name__)
 
 @app.route("/")
 def home_page():
-    return "<html><body><button>Send Message</button></body></html>"
+    return render_template("index.html.jinja")
 
 
 @app.route("/send", methods=["GET", "POST"])
 def send_message():
     if request.method == "POST":
-        recipient = request.form.get("recipient")
+        recipient = request.form.get("phone")
         client.messages.create(
             to=recipient,
             from_=PHONE,

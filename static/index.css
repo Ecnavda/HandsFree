@@ -1,0 +1,15 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#phone_form {
+    background: gray;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#phone_form button {
+    margin: 0 auto;
+}

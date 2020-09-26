@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 150px minmax(calc(100vh - 300px), max-content) 150px;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "top"
+    "mid"
+    "bot";
+}
+
+header {
+    grid-area: "top";
+    background: gray;
+}
+
+main {
+    grid-area: "mid";
+}
+
+footer {
+    grid-area: "bot";
+    background: black;
+}
