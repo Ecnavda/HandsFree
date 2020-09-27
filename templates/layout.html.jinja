@@ -10,15 +10,25 @@
 
 <body>
     <header>
+        <img id="logo" src="/static/logo-done.png" alt="HandsFree" />
     </header>
+
+    <nav>
+        <div>
+        {% if logged_in %}
+            <a href="schedule">schedule</a>
+            <a href="customer">customer</a>
+            <a href="logout">logout</a>
+        {% else %}
+            <a href="login">login</a>
+        {% endif %}
+        </div>
+    </nav>
 
     <main>
         {% block body %}
         {% endblock body %}
     </main>
-    
-    <footer>
-    </footer>
 </body>
 
 </html>

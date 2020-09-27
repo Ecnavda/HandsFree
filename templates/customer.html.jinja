@@ -1,0 +1,13 @@
+{% extends "layout.html.jinja" %}
+
+{% block head %}
+    <title>Customer</title>
+    <link rel="stylesheet" src="customer.css" />
+{% endblock head %}
+
+{% block body %}
+    <p>Printing SQL results</p>
+    {% for client in results %}
+        <p>{{ client }}</p>
+    {% endfor %}
+{% endblock body %}

@@ -4,10 +4,27 @@ main {
     align-items: center;
 }
 
-#phone_form {
-    background: gray;
-    border-radius: 20px;
-    padding: 20px;
+#login_form {
+    height: 400px;
+    width: 500px;
+    border: 1px solid #707070;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#login_form label {
+    margin-right: 15px;
+}
+
+#login_form button {
+    background: #31A5FF;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: 5px;
 }
 
 #phone_form button {

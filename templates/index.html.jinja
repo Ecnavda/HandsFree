@@ -7,14 +7,17 @@
 {% endblock head %}
 
 {% block body %}
-    <form id="phone_form" method="POST" action="">
-        <label for="name">Customer Name: </label>
-        <input type="text" name="name" />
-        <br>
-        <label for="phone">Phone Number: </label>
-        <input type="text" name="phone" />
-        <br>
-        <br>
-        <button type="button" onclick="send_message();">Send Message</button>
+    <form id="login_form" method="POST" action="login">
+        <div>
+            <label for="empl_id">Employee ID</label>
+            <input type="text" name="empl_id" />
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" />
+        </div>
+        <div>
+            <button>login</button>
+        </div>
     </form>
 {% endblock body %}
