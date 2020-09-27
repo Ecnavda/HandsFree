@@ -2,12 +2,17 @@
 
 {% block head %}
     <title>Customer</title>
-    <link rel="stylesheet" src="customer.css" />
+    <link rel="stylesheet" href="/static/customer.css" />
 {% endblock head %}
-
+    <span>Customer List</span>
 {% block body %}
-    <p>Printing SQL results</p>
+    <table>
     {% for client in results %}
-        <p>{{ client }}</p>
+        <tr>
+            {% for x in client %}
+                <td>{{ x }}</td>
+            {% endfor %}
+        </tr>
     {% endfor %}
+    </table>
 {% endblock body %}

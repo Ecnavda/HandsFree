@@ -2,13 +2,27 @@
 
 {% block head %}
     <title>Schedule</title>
-    <link rel="stylesheet" src="schedule.css" />
+    <link rel="stylesheet" href="/static/schedule.css" />
 {% endblock head %}
 
 {% block body %}
-    <span id="date">September 26, 2020</span>
+    <span id="date">{{ date }}</span>
 
     <section id="schedule">
-        <p>Stuff in here</p>
+        {% if schedule %}
+            <table>
+            {% for appointment in schedule %}
+                <tr>
+                {% for detail in appointment %}
+                    <td>{{ detail }}</td>
+                {% endfor %}
+                </tr>
+            {% endfor %}
+            </table>
+        {% else %}
+            <p>No appointments</p>
+        {% endif %}
     </section>
+
+    <button>add appointment</button>
 {% endblock body %}

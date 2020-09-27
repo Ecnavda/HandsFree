@@ -7,17 +7,21 @@
 {% endblock head %}
 
 {% block body %}
-    <form id="login_form" method="POST" action="login">
-        <div>
-            <label for="empl_id">Employee ID</label>
-            <input type="text" name="empl_id" />
-        </div>
-        <div>
-            <label for="password">Password</label>
-            <input type="password" name="password" />
-        </div>
-        <div>
-            <button>login</button>
-        </div>
-    </form>
+    {% if logged_in %}
+        <div>Logged in</div>
+    {% else %}
+        <form id="login_form" method="POST" action="login">
+            <div>
+                <label for="empl_id">Employee ID</label>
+                <input type="text" name="empl_id" />
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" />
+            </div>
+            <div>
+                <button>login</button>
+            </div>
+        </form>
+    {% endif %}
 {% endblock body %}

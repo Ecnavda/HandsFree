@@ -24,7 +24,7 @@ body {
 }
 
 header {
-    grid-area: "top";
+    grid-area: top;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,7 +36,7 @@ header #logo {
 }
 
 nav {
-    grid-area: "nav";
+    grid-area: nav;
     border-top: 1px solid var(--gray);
     border-bottom: 1px solid var(--gray);
     display: flex;
@@ -64,5 +64,5 @@ nav a:hover {
 }
 
 main {
-    grid-area: "mid";
+    grid-area: body;
 }

@@ -1,0 +1,10 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+table td {
+    padding: 15px 30px;
+}
